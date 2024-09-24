@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    scroll-behavior: smooth;
+
+}
+body{
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+}
+html{
+  overflow-x: hidden;
+  font-size: 100%;
+}
+/* ========Navbar Section============== */
+.header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 70px;
+    line-height: 70px;
+    background-color: rgb(56, 55, 55);
+    
+}
+.Navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;   
+}
+.Navbar h1{
+    color: orange;
+    font-size: 20px;
+    text-shadow: 2px 2px 2px #000;
+    font-family: cursive;
+}
+.Navbar ul{
+    display: flex;
+   
+}
+.Navbar ul li{
+    padding: 3px 15px 3px 15px;
+    list-style: none;
+    
+}
+.Navbar ul li:hover,.phone a:hover,#mobile_menu ul li:hover{
+  background: navy;
+  cursor: pointer;
+}
+.Navbar ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+}
+.phone a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 15px;
+    font-size: 1em;
+}
+
+
+
+/* ============Navbar Section End================ */
+
+/* =============Hero Section Start============== */
+.hero_section{
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    background-repeat: no-repeat;
+    background-size:cover ;
+    text-align: center;
+    align-items: center;
+    background-image:url(./hero-img.webp);
+    height:100vh;
+    width: 100vw;
+
+
+  }
+  .hero_section::before{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    /* filter: brightness(50%); */
+  }
+  .div_hero{
+    position: absolute;
+ 
+  }
+  .div_hero h1{
+    color: #fff;
+    font-size: 2.8rem;
+    font-family: cursive;
+  }
+  .div_hero h2{
+    color: #fff;
+    font-size: 2.2rem;
+    font-family: cursive;
+  }
+  .div_hero button{
+    color: #fff;
+    font-size: 20px;
+    padding: 3px 20px 3px 20px;
+    border: 2px solid orange;
+    background: rgb(0,0,0,0.6);
+    border-radius: 25px;
+    font-family: cursive;
+  }
+  .div_hero button:hover{
+    background: navy;
+    cursor: pointer;
+  }
+/* ===============Hero Sectiom END==================== */
+
+/* ======================Menu Section start========================= */
+
+#Menu{
+  padding-top: 70px;
+}
+.Menu_hedding h1{
+  font-size: 50px;
+  font-family: cursive;
+  text-align: center;
+  padding: 30px;
+}
+
+.Menu_card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  
+ }
+
+ .Menu_card article{
+  width: 255px;
+  height: 350px;
+  background-color: white;
+  overflow: hidden;
+  align-items: center;
+}
+.Menu_card article .menu_name{
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  height: 40px;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 25px;
+  font-family: cursive;
+}
+.Menu_card article div .img{
+   height: 220px;
+   width: 250px;
+   margin-top: 10px;
+   border:2px solid orange;
+}
+
+.Menu_card article button {
+  text-align: center;
+  height: 25px;
+  width: 100px;
+  border-radius: 10px;
+  font-size: 15px;
+  font-family: cursive;
+  background-color: orange;
+  margin-top: 10px;
+  margin-left:75px;
+}
+/* ======================Menu Section End========================= */
+/* ===============================chef Section start====================== */
+#Chaf{
+  padding-top: 70px;
+}
+.Chef_hedding h1{
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+  padding: 30px;
+}
+
+.chaf_card{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: space-evenly;
+  /* padding-bottom: 50px; */
+}
+.chaf_card article .chaf_detail {
+  text-align: center;
+  align-items: center;
+  font-family: cursive;
+  font-size: 15px;
+  width: 300px;
+}
+.chaf_card article .chef_name{
+  text-align: center;
+  background-color:orange ;
+  height: 30px;
+  font-family: cursive;
+  font-size: 20px;
+  color: #fff;
+}
+.chaf_card article .chaf_img{
+  height: 300px;
+  width: 300px;
+}
+
+/* ===============================chef Section End====================== */
+/* ================================About section Start==================== */
+#About{
+  padding-top: 70px;
+}
+.About_hedding{
+  padding: 25px 0px 25px 0px;
+}
+.About_hedding h1{
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+}
+#about_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 100px 0 100px;
+}
+.about_col{
+  flex: 1;
+}
+#about_img img{
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: fill;
+}
+#about_img{
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  margin: auto;
+}
+.about_col h1{
+  text-align: center;
+  font-family: cursive;
+}
+.about_col p{
+  text-align: justify;
+  font-weight:bold ;
+}
+
+/* ================================About section End==================== */
+
+/* ================================Contact section Start==================== */ 
+#Contact{
+  padding-top: 100px;
+}
+.Contact_hedding h1{
+  text-align: center;
+  font-family: cursive;
+  font-size: 50px;
+  padding: 25px 0 25px 0;
+
+}
+#contact_row{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 100px 0 100px;
+  flex-wrap: wrap;
+}
+.contact_col{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1;
+}
+.contact_col p,h3{
+  font-weight: bold;
+  color: #292929;
+  margin: 5px;
+  font-size: 20px;
+
+}
+.contact_col div p{
+  margin: 5px;
+  font-size: 20px;
+}
+.contact_col p a{
+  text-decoration: none;
+  color: #292929;
+  
+}
+#social a{
+  color: rgb(189, 79, 165);
+  margin: 3px;
+}
+.contact_col form{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(189, 79, 165);
+  width: 70%;
+  padding: 10px 40px 20px 20px;
+}
+.contact_col form h2{
+  text-align: center;
+  font-family: cursive;
+}
+.contact_col form input{
+  width: 100%;
+  height: 17pt;
+  padding: 5px;
+  margin: 5px;
+}
+.contact_col form textarea{
+  width: 100%;
+  padding: 5px;
+  margin: 5px;
+}
+.contact_col form button{
+  margin: auto;
+  padding: 10px;
+  color: #fff;
+  background-color: orange;
+  border:  1px solid orange;
+}
+/* ================================Contact section End==================== */
+
+/* ================================Footer section End==================== */
+.footer_hedding h1{
+  color: orange;
+  font-size: 30px;
+  text-shadow: 2px 2px 2px #000;
+  font-family: cursive;
+  margin: 10px;
+  transition: 0.5s;
+}
+.footer_hedding h1:hover{
+  transform: translateY(-10px);
+
+}
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background-color:rgb(56, 55, 55);
+  padding: 20px 50px;
+  flex-direction: column;
+  margin-top: 50px;
+
+}
+footer .social_icon,footer .menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  margin: 10px 0;
+  list-style: none;
+  text-decoration: none;
+
+}
+footer .social_icon li a{
+  display: inline-block;
+  margin: 0 10px;
+  transition: 0.5s;
+  color: #fff;
+}
+footer .social_icon li a:hover{
+  display: inline-block;
+  margin: 0 10px;
+  transform: translateY(-10px);
+  color: #fff;
+}
+footer .menu_footer li a{
+  display: inline-block;
+  margin: 0 5px;
+  text-decoration: none;
+  opacity: 0.75;
+  font-size: 15px;
+  font-family: cursive;
+  transition: 0.5s;
+  color: #fff;
+}
+footer .menu_footer li{
+  text-decoration: none;
+}
+footer .menu_footer li a:hover{
+  opacity: 1;
+  color: #fff;
+}
+footer p{
+  text-align: center;
+  margin: 15px 0 10px 0;
+  opacity: 0.75;
+  font-size: 15px;
+  font-family: cursive;
+  color:orange;
+
+}
+
+
+/* ================================footer section End==================== */
+
+
+
+
+
+
+/* ======================Mobile Viwe=================== */
+#mobile_menu{
+  display: none;
+  height: 40px;
+  line-height: 40px;
+  background-color: rgb(212, 45, 212);
+}
+#mobile_menu ul{
+  display: flex;
+  justify-content: center;
+}
+#mobile_menu ul li{
+  list-style: none;
+  padding: 0px 5px 0px 5px;
+}
+#mobile_menu ul li a{
+  text-decoration: none;
+  color: #fff;
+}
+/* ======================Media Section End========================= */
+
+/* =============media query for 768px================ */
+
+@media screen and (max-width : 768px) {
+  /* ==mobile view */
+  #mobile_menu{
+    display: block;
+  }
+  /* ==navbar section== */
+  .Navbar ul{
+    display: none;                                                                  
+  }
+  html{
+    font-size: 80%;
+  }
+  /* ==cafe section== */
+  .chaf_card article .chaf_img{
+    height: 300px;
+    width: 300px;
+  }
+  .chaf_card{
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: space-evenly;
+    
+  }
+
+  /* ===about section== */
+  .about_col h1{
+    font-size: 30px;
+  }
+  #about_row{
+   
+    padding: 0 50px 0 50px;
+  }
+  /* ====contact section===== */
+  #contact_row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding:0 50px 0 50px;
+    flex-wrap: wrap;
+  }
+}
+/* =============media query for 425px================ */
+
+@media screen and (max-width : 425px) {
+/* ==cafe section== */
+.chaf_card article .chaf_img{
+  height: 300px;
+  width: 300px;
+}
+.chaf_card{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  
+}
+/* ===menu section===== */
+.Menu_card{
+  display: grid;
+  grid-template-columns: auto;
+  justify-content: space-evenly;
+  
+ }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
